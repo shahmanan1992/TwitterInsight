@@ -2,10 +2,91 @@
 
 body
 {  
-    background-color: green;
+	margin:0;
+    background-color: ghostwhite;
 }
 
-p{
+#page{
+	display:block;
+}
+
+#heading
+{
+	width:50%;
+	margin:auto;
 	text-align: center;
+	margin-top:60px;
+	font-family: sans-serif;
+	font-size: 30px;
+}
+
+#searchbar div
+{
+	width:30%;
+	margin: auto;
+	padding-bottom: 5px;
+}
+
+#fix
+{
+	font-size: 20px;
+	color: black;
+}
+
+#searchbar input
+{
+	display:block;
+}
+
+#searchtweet
+{
+	font-size:18px;
+	width:30%;
+	margin: auto;
+	height:30px;
+	padding:5px;	
+}
+
+#submit
+{
+	width:5%;
+	margin:20px auto;
+	height:30px;
+	font-size: 16px;
+	
+}
+
+#results {
+	width:70%;
+	margin:auto;
+}
+
+
+#tweet ul{
+	list-style-type: none;
+} 
+
+
+#tweet li button{
+	text-align:left;
+	padding:5px;
+	width:100%;
+	background-color:navy;
+	color:white;
+	border:1px thin;
+	border-radius: 5px;
+	font-size: 15px;
+} 
+
+#nothing p
+{
+	font-size: 20px;
+	color:red;
+	text-align: center;
+	
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+    font-size: 2em;
 }
 
