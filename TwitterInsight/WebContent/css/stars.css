@@ -1,0 +1,29 @@
+@CHARSET "ISO-8859-1";
+
+.stars_tone {
+	background-repeat: repeat-x;
+	background-position: 0 0;
+	background-attachment: scroll;
+	display: block;
+	height: 16px;
+
+}
+
+#bodyleft li span {
+	display: inline-block;
+}
+
+#bodyright li span {
+	display: inline-block;
+}
+
+#bodyleft li .tone_heading_left {
+	margin-right: 15px;
+	width:60px;
+}
+
+#bodyright li .tone_heading_right {
+	margin-right: 15px;
+	width:120px;
+}
+

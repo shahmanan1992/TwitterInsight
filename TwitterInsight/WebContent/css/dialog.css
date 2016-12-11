@@ -1,0 +1,141 @@
+#dialogoverlay {
+	background: aqua none repeat scroll 0 0;
+	display: none;
+	height: 100%;
+	left: 0;
+	opacity: 0.8;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+#dialogbox {
+	background-color: white;
+	border: 1px solid #f9f9f9;
+	border-radius: 20px;
+	display: none;
+	height: 80%;
+	position: fixed;
+	width: 700px;
+}
+
+#dialogheader {
+	color: #323232;
+	font-size: 22px;
+	padding: 15px;
+	font-family: "trebuchet MS","Tahoma";
+	text-align: center;
+}
+
+.closebtn {
+	color: #323232;
+	cursor: pointer;
+	float: right;
+	font-size: 22px;
+	font-weight: bold;
+	margin-right: 10px;
+	transition: all 0.3s ease 0s;
+}
+
+.closebtn:hover {
+	color: red;
+}
+
+#dialogbody
+{
+	margin-top:2%;
+}
+
+#bodyleft {	
+	float: left;
+	margin-left: 10%;
+	width:34%;
+	background-color: #EEEEEE;
+	border:0 none;
+}
+
+#bodyleft:HOVER
+{
+	background-color: #D3D3D3;
+	outline: 0 none;
+}
+
+#bodyright {
+	float: right;
+	margin-right: 10%;
+	width:37%;
+	background-color: #EEEEEE;
+	border:0 none;
+}
+
+#bodyright:HOVER
+{
+	background-color: #D3D3D3;
+	outline: 0 none;
+}
+
+.toneheader {
+	font-family: "Tahoma";
+	color: gray;
+	font-size: 18px;
+	font-weight:bold;
+	margin-left:10px;
+}
+
+#bodyleft ul {
+	list-style-type: none;
+	padding:15px;
+}
+
+#bodyright ul {
+	list-style-type: none;	
+	padding:15px;
+}
+
+#bodyright li
+{
+	margin-bottom:10px;
+	font-family: "trebuchet MS","Tahoma";
+
+}
+
+#bodyleft li
+{
+	font-family: "trebuchet MS","Tahoma";
+	margin-bottom:10px;
+}
+
+#foot_toneheader
+{
+	font-family: "Tahoma";
+	color: gray;
+	font-size: 18px;
+	font-weight:bold;
+}
+
+#dialogfoot
+{
+	margin-top:41%;
+}
+
+#dialogfoot ul
+{
+	list-style-type: none;
+	margin-left: 10%;
+	padding:15px;
+	background-color:#EEEEEE;
+	width:35%;
+	border:0 none;
+}
+
+#dialogfoot li
+{
+	font-family: "trebuchet MS","Tahoma";
+	margin-bottom:10px;
+	font-size:15px;
+}
+
+#dialogfoot ul:HOVER {
+	background-color:#D3D3D3;
+	outline:0 none;
+}

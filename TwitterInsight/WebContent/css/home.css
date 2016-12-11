@@ -2,8 +2,7 @@
 
 body
 {  
-	margin:0;
-    background-color: ghostwhite;
+    background-color: white;
 }
 
 #page{
@@ -12,49 +11,95 @@ body
 
 #heading
 {
-	width:50%;
-	margin:auto;
+	margin:50px auto;
 	text-align: center;
-	margin-top:60px;
-	font-family: sans-serif;
+	font-family: "trebuchet MS","Tahoma";
 	font-size: 30px;
+	font-weight:bold;
+	height:20px;
 }
+
+#heading div
+{
+	display: inline-block;
+}
+
 
 #searchbar div
 {
-	width:30%;
-	margin: auto;
+	margin:0 auto;
+	text-align:center;
 	padding-bottom: 5px;
 }
 
 #fix
 {
-	font-size: 20px;
+	font-family: "trebuchet MS","Tahoma";
+	font-size: 17px;
 	color: black;
 }
 
-#searchbar input
+
+#searchform
 {
-	display:block;
+	margin-left:39%;
+	width:30%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+    margin-bottom:5%;
+}
+
+#searchform input
+{
+	background: #eee none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 3px 0 0 3px;
+    float: left;
+    font: bold 15px "lucida sans","trebuchet MS","Tahoma";
+    padding: 10px 5px 11px 10px;
+    width:74%;
+}
+
+#searchform input:FOCUS
+{
+	background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8) inset;
+    outline: 0 none;
 }
 
 #searchtweet
 {
 	font-size:18px;
-	width:30%;
-	margin: auto;
 	height:30px;
-	padding:5px;	
+	padding:5px;
 }
 
 #submit
 {
-	width:5%;
-	margin:20px auto;
-	height:30px;
-	font-size: 16px;
+	background: #1DA1F2 none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0 3px 3px 0;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font: bold 15px/40px "lucida sans","trebuchet MS","Tahoma";
+    height: 40px;
+    padding: 0;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+	width:22%;
 	
 }
+
+#submit:HOVER
+{
+	background: #0000FF none repeat scroll 0 0;
+}
+
+#submit::-moz-focus-inner {
+    border: 0 none;
+    padding: 0;
+}
+
 
 #results {
 	width:70%;
@@ -69,14 +114,50 @@ body
 
 #tweet li button{
 	text-align:left;
-	padding:5px;
+	padding:10px;
 	width:100%;
-	background-color:navy;
-	color:white;
-	border:1px thin;
-	border-radius: 5px;
-	font-size: 15px;
+	border:1px solid blue;
+	color:blue;
+	border-radius: 10px;
+	font-family:"Tahoma";
+	font-size: 16px;
 } 
+
+#tweet li button:hover{
+	background-color:blue;
+	color:white;
+}
+
+#twt
+{
+	font-family:"Tahoma";
+	font-size: 19px;
+}
+
+hr
+{
+	border: 0 none;
+	border-bottom: 3px solid #D3D3D3;
+	width:105%;
+}
+
+#tweet a
+{
+	display:inline-block;
+	text-decoration: none;
+	color:#949494;
+	padding:20px;
+	width:100%;
+	font-size:17px;
+	font-family:"Tahoma";
+	border-bottom: 2px solid #EEEEEE;
+}
+
+#tweet a:hover
+{
+	text-decoration: none;
+	color:#1DA1F2;
+}
 
 #nothing p
 {
@@ -86,7 +167,9 @@ body
 	
 }
 
-input::-webkit-input-placeholder { /* WebKit browsers */
-    font-size: 2em;
+#searchform input:-moz-placeholder {
+    color: #999;
+    font-style: italic;
+    font-weight: normal;
 }
 
