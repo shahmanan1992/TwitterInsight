@@ -48,7 +48,7 @@ import toneAnalyzer.ToneAnalyzer;
 			PrintWriter out = response.getWriter();
 			HttpSession session_name=request.getSession();
 			String search=request.getParameter("user_tweet");
-			System.out.println("Current session value ="+session_name.getAttribute("Anger"));
+			
 			HashMap<String,Double> results=ts.toneAnalyze(search);
 //			if(results.size()>0) {
 //				session_name.setAttribute("Anger", results.get("Anger"));

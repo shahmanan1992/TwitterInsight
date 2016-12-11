@@ -42,7 +42,7 @@ public class twitterSearch {
 			String auth="Basic "+new String(new Base64().encode(username_pass.getBytes()));
 			conn.setRequestProperty("Authorization", auth);
 			conn.setRequestMethod("GET");
-			//conn.addRequestProperty("Accept","application/xml"); //needs to match wadl i.e. what you want to accept
+		
 			System.out.println(conn.getResponseMessage());
 
 			if (conn.getResponseCode() != 200) {
@@ -66,8 +66,10 @@ public class twitterSearch {
 			for(int i=0;i<array_json.length();i++)
 			{
 				json=array_json.getJSONObject(i);
-				JSONObject arr=json.getJSONObject("message");
-				results.add(arr.getString("body"));
+				JSONObject msg=json.getJSONObject("message");
+				JSONObject twitter_name=msg.getJSONObject("actor");
+				System.out.println(twitter_name.getString("preferredUsername"));
+				results.add(msg.getString("body")+"preferredUsername"+twitter_name.getString("preferredUsername"));
 			}
 			
 			// Clean up
@@ -77,7 +79,8 @@ public class twitterSearch {
 		}
 		catch(Exception e)
 		{
-			return results;
+//			return results;
+			System.out.println(e.getMessage());
 		}
 		return results;
 

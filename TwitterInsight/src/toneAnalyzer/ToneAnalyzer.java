@@ -48,8 +48,7 @@ public class ToneAnalyzer {
 			System.out.println(conn.getResponseMessage());
 
 			if (conn.getResponseCode() != 200) {
-				throw new Exception("Failed : HTTP error code : "
-						+ conn.getResponseCode());
+				throw new Exception("Failed : HTTP error code : " + conn.getResponseCode());
 			}
 
 
@@ -62,14 +61,13 @@ public class ToneAnalyzer {
 			while((line=br.readLine())!=null)
 				data+=line;
 
-			System.out.println(data);
+			
 			JSONObject json=new JSONObject(data);
 			JSONObject document_json=json.getJSONObject("document_tone");
 			JSONArray array_json=document_json.getJSONArray("tone_categories");
 			for(int i=0;i<array_json.length();i++)
 			{
 				json=array_json.getJSONObject(i);
-				System.out.println(json.getString("category_name"));
 				JSONArray tones=json.getJSONArray("tones");
 				for(int j=0;j<tones.length();j++)
 				{
@@ -79,10 +77,10 @@ public class ToneAnalyzer {
 				
 			}
 			
-			for(String keys:doc_tones.keySet())
-			{
-				System.out.println(keys+": "+doc_tones.get(keys));
-			}
+//			for(String keys:doc_tones.keySet())
+//			{
+//				System.out.println(keys+": "+doc_tones.get(keys));
+//			}
 
 			// Clean up
 			in.close();

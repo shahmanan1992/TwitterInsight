@@ -49,8 +49,15 @@ public class Interface extends HttpServlet {
 		HttpSession session_name=request.getSession();
 		String search=request.getParameter("search");
 		ArrayList<String> results=ts.tweetSearch(search);
+		ArrayList<String> refined_result=new ArrayList<String>();
+		for(String s:results)
+		{
+			refined_result.add(s.replaceAll("[^a-zA-Z0-9:@.]"," "));
+			System.out.println(s.replaceAll("[^a-zA-Z0-9]"," "));
+		}
 		if(results.size()>0) {
 			session_name.setAttribute("searchResult", results);
+			session_name.setAttribute("refinedResult", refined_result);
 		}
 		else {
 			session_name.setAttribute("searchResult", null);

@@ -104,6 +104,7 @@ body
 #results {
 	width:70%;
 	margin:auto;
+	font-family:"Tahoma";
 }
 
 
@@ -119,7 +120,7 @@ body
 	border:1px solid blue;
 	color:blue;
 	border-radius: 10px;
-	font-family:"Tahoma";
+	
 	font-size: 16px;
 } 
 
@@ -130,27 +131,31 @@ body
 
 #twt
 {
-	font-family:"Tahoma";
 	font-size: 19px;
 }
 
 hr
 {
 	border: 0 none;
-	border-bottom: 3px solid #D3D3D3;
+	border-bottom: 4px solid #D3D3D3;
 	width:105%;
+}
+
+#tweet_user
+{
+	color:#1DA1F2;
+	font-size:17px;
 }
 
 #tweet a
 {
 	display:inline-block;
 	text-decoration: none;
-	color:#949494;
+	color:#555555;
 	padding:20px;
 	width:100%;
 	font-size:17px;
-	font-family:"Tahoma";
-	border-bottom: 2px solid #EEEEEE;
+	border-bottom: 2px solid #D3D3D3;
 }
 
 #tweet a:hover

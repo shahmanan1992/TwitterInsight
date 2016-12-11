@@ -176,11 +176,13 @@
 			<span id="twt">Tweets Found<hr></span>
 			<%
 				ArrayList<String> result = (ArrayList<String>) output.getAttribute("searchResult");
+				ArrayList<String> refined=(ArrayList<String>)output.getAttribute("refinedResult");
 					for (int i = 0; i < result.size(); i++) {
+						String split[]=result.get(i).split("preferredUsername");
 			%>
-			
+			<span id="tweet_user">@<%=split[1] %></span>
 			<span id="tweet">
-				<a href='' onclick="javacsript:displayTone('<%=result.get(i)%>');return false"><%=result.get(i)%></a>
+				<a href='' onclick="javacsript:displayTone('<%=refined.get(i)%>');return false"><%=split[0]%></a>
 			</span>
 			<%
 				}
